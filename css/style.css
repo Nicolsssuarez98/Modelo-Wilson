@@ -5,9 +5,6 @@
 .marginDiv{
     margin-bottom: 30px;
 }
-footer{
-    background-color: #f8f9fa !important;
-}
 iframe{
     padding:0 !important;
 }
@@ -18,14 +15,28 @@ iframe{
     margin-top: 20px;
     border-radius: 50%;
 }
-.text-decoration{
-    text-decoration: none !important;
-}
-footer > div > div > a:hover{
-    color: #f8f9fa;
-    transition: background-color .5s;
-}
-.navbar-nav > li > a{
+.navbar-nav  li  a{
     text-decoration: none !important;
     cursor: pointer;
+}
+.social-block  div  a{
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: .3s;    
+    color: #000;
+}
+
+.social-block  div  .icon-twitter:hover{
+    color: #1da1f2;
+}
+.social-block  div  .icon-instagram:hover{
+    color: #ec2314a6;
+}
+.social-block  div  .icon-github:hover{
+    color: #be4bdb;
 }

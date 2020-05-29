@@ -3,16 +3,18 @@ primer = document.getElementById('primer').value,
 segundo = document.getElementById('segundo').value,
 tercero = document.getElementById('tercero').value, 
 cuarto = document.getElementById('cuarto').value;
-var optimoDelPedido, costeReposicion, costeAlmacenamiento, costeInventario, pedidosAlAno, diasPedidos;
+var optimoDelPedido, costeReposicion, costeAlmacenamiento, costeInventario, pedidosAlAno, diasPedidos, operacionAlmacenammiento;
 function mostrar(){
     primer = document.getElementById('primer').value;
     segundo = document.getElementById('segundo').value; 
     tercero = document.getElementById('tercero').value;
+    cuarto = document.getElementById('cuarto').value;
     optimoDelPedido = Math.sqrt(2*parseFloat(primer)*parseFloat(segundo)/5);
     document.getElementById('optimoPedido').innerHTML =  parseInt(optimoDelPedido);
     costeReposicion = parseFloat(primer)*parseFloat(segundo)/optimoDelPedido;
     document.getElementById('costeReposicion').innerHTML =  parseInt(costeReposicion);
-    costeAlmacenamiento = tercero*(optimoDelPedido/2 + cuarto);
+    operacionAlmacenammiento = optimoDelPedido/2
+    costeAlmacenamiento = parseFloat(tercero)*(operacionAlmacenammiento + parseFloat(cuarto));
     document.getElementById('costeAlmacenamiento').innerHTML =  parseInt(costeAlmacenamiento);
     costeInventario = costeReposicion + costeAlmacenamiento;
     document.getElementById('costeInventarios').innerHTML =  parseInt(costeInventario);
@@ -29,8 +31,6 @@ function inicio(){
     document.form.cuarto.value = 0;
 
  };
-
-    window.onload = inicio;
  inicio();
 buttomRelative.addEventListener('click',() => mostrar());
 
