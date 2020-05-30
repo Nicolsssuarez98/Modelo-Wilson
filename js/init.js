@@ -18,10 +18,10 @@ function mostrar(){
     document.getElementById('costeAlmacenamiento').innerHTML =  parseInt(costeAlmacenamiento);
     costeInventario = costeReposicion + costeAlmacenamiento;
     document.getElementById('costeInventarios').innerHTML =  parseInt(costeInventario);
-    pedidosAlAno = segundo/optimoDelPedido;
+    pedidosAlAno = parseFloat(segundo)/optimoDelPedido;
     document.getElementById('pedidosAlAno').innerHTML =  parseInt(pedidosAlAno);
     diasPedidos = 360/pedidosAlAno;
-    document.getElementById('diasPedidos').innerHTML =  parseInt(diasPedidos);
+    document.getElementById('diasPedidos').innerHTML =  parseInt(diasPedidos.toFixed(3));
 
 }
 function inicio(){
