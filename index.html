@@ -65,25 +65,25 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">s</span>
                     </div>
-                    <input type="text" name="primer" class="form-control" id="primer">
+                    <input type="text" min="0"  name="primer" class="form-control"  onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="0" id="primer">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">D</span>
                     </div>
-                  <input type="text" class="form-control" name="segundo" id="segundo">
+                  <input type="text" class="form-control" name="segundo"  onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="0" id="segundo">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">g</span>
                     </div>
-                    <input type="text" class="form-control" name="tercero" id="tercero">
+                    <input type="text" class="form-control" name="tercero"  onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="0" id="tercero">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">ss</span>
                     </div>
-                    <input type="text" class="form-control" name="cuarto" id="cuarto">
+                    <input type="text" class="form-control" name="cuarto"  onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="0" id="cuarto">
                 </div>
                 <button type="button" class="btn btn-primary mb-4" id="buttomRelative">Realizar procedimiento</button>
             </form>
