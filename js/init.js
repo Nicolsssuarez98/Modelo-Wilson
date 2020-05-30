@@ -10,19 +10,18 @@ function mostrar(){
     tercero = document.getElementById('tercero').value;
     cuarto = document.getElementById('cuarto').value;
     optimoDelPedido = Math.sqrt(2*parseFloat(primer)*parseFloat(segundo)/5);
-    document.getElementById('optimoPedido').innerHTML =  parseInt(optimoDelPedido);
+    document.getElementById('optimoPedido').innerHTML =  optimoDelPedido;
     costeReposicion = parseFloat(primer)*parseFloat(segundo)/optimoDelPedido;
-    document.getElementById('costeReposicion').innerHTML =  parseInt(costeReposicion);
+    document.getElementById('costeReposicion').innerHTML =  costeReposicion;
     operacionAlmacenammiento = optimoDelPedido/2
     costeAlmacenamiento = parseFloat(tercero)*(operacionAlmacenammiento + parseFloat(cuarto));
-    document.getElementById('costeAlmacenamiento').innerHTML =  parseInt(costeAlmacenamiento);
+    document.getElementById('costeAlmacenamiento').innerHTML = costeAlmacenamiento;
     costeInventario = costeReposicion + costeAlmacenamiento;
-    document.getElementById('costeInventarios').innerHTML =  parseInt(costeInventario);
+    document.getElementById('costeInventarios').innerHTML =  costeInventario;
     pedidosAlAno = parseFloat(segundo)/optimoDelPedido;
-    document.getElementById('pedidosAlAno').innerHTML =  parseInt(pedidosAlAno);
+    document.getElementById('pedidosAlAno').innerHTML =  pedidosAlAno;
     diasPedidos = 360/pedidosAlAno;
-    document.getElementById('diasPedidos').innerHTML =  parseInt(diasPedidos.toFixed(3));
-
+    document.getElementById('diasPedidos').innerHTML =  diasPedidos.toFixed(1);
 }
 function inicio(){
     document.form.primer.value = 2;
