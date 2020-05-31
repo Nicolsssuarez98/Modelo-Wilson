@@ -1,42 +1,29 @@
+::-webkit-scrollbar {
+    background: #fff;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background: #1da1f2;
+}
 .btn-hover:hover, .li-nav:hover{
     background-color: #f8f9fa;
     transition: background-color .5s;
 }
-.marginDiv{
-    margin-bottom: 30px;
-}
-iframe{
-    padding:0 !important;
-}
-.img-circle-information{
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
-    margin-top: 20px;
-    border-radius: 50%;
-}
+
 .navbar-nav  li  a{
     text-decoration: none !important;
     cursor: pointer;
 }
-.social-block  div  a{
-    margin: 0 10px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: .3s;    
-    color: #000;
+.footer-jumbotron{
+    padding: 20px;
+    background-color: #f8f9fa;
 }
-
-.social-block  div  .icon-twitter:hover{
-    color: #1da1f2;
+.footer-jumbotron > ul > li > a{
+    font-weight: 600 !important;
+    color: #808baf;
+    cursor: pointer;
 }
-.social-block  div  .icon-instagram:hover{
-    color: #ec2314a6;
-}
-.social-block  div  .icon-github:hover{
-    color: #be4bdb;
+.container-help{
+    padding: 80px;
 }
