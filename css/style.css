@@ -4,14 +4,14 @@
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 1px;
-    background: #1da1f2;
+    background: rgb(170, 178, 185);
 }
 .btn-hover:hover, .li-nav:hover{
     background-color: #f8f9fa;
     transition: background-color .5s;
 }
 
-.navbar-nav  li  a{
+.navbar-nav  li  a, .navbar  .navbar-text{
     text-decoration: none !important;
     cursor: pointer;
 }
